@@ -1,0 +1,39 @@
+# ============================================================
+# 交通特征提取工程依赖包
+# 安装命令：pip install -r requirements.txt
+#
+# 若使用 GPU，请先按 https://pytorch.org/ 安装对应 CUDA 版本的
+# torch + torchvision，再运行本文件，例如：
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+# ============================================================
+
+# ── 深度学习框架 ─────────────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ── SegFormer（Hugging Face Transformers）───────────────────
+transformers>=4.35.0
+huggingface-hub>=0.20.0
+
+# ── YOLO BDD100K ─────────────────────────────────────────────
+ultralytics>=8.0.0
+
+# ── ByteTrack 多目标追踪（强烈推荐，缺失时退回简易 IoU 追踪）──
+supervision>=0.18.0
+
+# ── 图像/视频处理 ─────────────────────────────────────────────
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# ── 数值计算与数据处理 ────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# ── YOLOPv2 仓库附加依赖（克隆仓库后可能需要）────────────────
+# 以下依赖来自 CAIC-AD/YOLOPv2/requirements.txt，此处一并列出
+# 避免克隆后再单独安装
+matplotlib>=3.7.0
+PyYAML>=6.0
+tqdm>=4.65.0
+seaborn>=0.12.0
