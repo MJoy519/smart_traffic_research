@@ -72,7 +72,7 @@ BDD100K_GROUPS = {
 # 是否启用 ROI 裁剪（仅在 ROI 区域内提取特征）
 # 坐标单位：像素（px），使用 roi_selector.py 工具交互式获取
 ROI = {
-    "enabled": False,   # True = 仅处理 ROI 区域；False = 处理整张图像
+    "enabled": True,   # True = 仅处理 ROI 区域；False = 处理整张图像
     "x1": 4,            # ROI 左边界（px）
     "y1": 372,          # ROI 上边界（px）
     "x2": 1914,         # ROI 右边界（px）

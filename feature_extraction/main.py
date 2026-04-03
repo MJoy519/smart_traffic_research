@@ -29,7 +29,7 @@ USE_EXTRACTORS = ["segformer", "yolo", "yolopv2"]   # 全选
 # USE_EXTRACTORS = ["yolo"]                          # 仅 YOLO
 
 # 要处理的路线编号（1/2/3 或子集）
-TARGET_ROUTES = [2]
+TARGET_ROUTES = [3]
 
 # 帧采样间隔（每 N 帧取 1 帧，1 = 逐帧；值越大越快但精度越低）
 FRAME_SAMPLE_INTERVAL = 1
